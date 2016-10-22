@@ -1,0 +1,81 @@
+# General Settings
+name: Lonnie Coffman
+job_title: Aspiring Web Developer<br /><br />Amatuer Algorithmic Trader<br /><br />(Ruby, MQL4, PHP, MySQL)
+email: lonniecoffman@icloud.com
+description: In the process of career swapping to web development via <a href='http://www.launchschool.com' class='link'>Launch School</a>, a lot of hard work and a little bit of luck.
+avatar: https://avatars1.githubusercontent.com/u/22034947
+favicon: /favicon.ico
+twitter_handler: your_handler
+analytics_code: UA-XXXXXXX-2
+disqus: lonniecoffman
+
+# Social Accounts
+social_networks:
+-  { name: facebook, url: '' }
+-  { name: twitter, url: '' }
+-  { name: instagram, url: '' }
+-  { name: google-plus, url: '' }
+-  { name: linkedin, url: '' }
+-  { name: skype, url: '' }
+-  { name: github, url: 'https://github.com/LonnieCoffman' }
+-  { name: codepen, url: '' }
+-  { name: stack-overflow, url: '' }
+-  { name: dribbble, url: '' }
+-  { name: behance, url: '' }
+-  { name: pinterest, url: '' }
+-  { name: tumblr, url: '' }
+-  { name: youtube, url: '' }
+-  { name: vimeo, url: '' }
+-  { name: vine, url: '' }
+-  { name: 500px, url: '' }
+-  { name: flickr, url: '' }
+-  { name: spotify, url: '' }
+-  { name: steam, url: '' }
+-  { name: wordpress, url: '' }
+-  { name: xing, url: '' }
+
+# Modules Settings
+show_categories: 1
+show_tags: 1
+show_mood: 1
+show_email: 1
+show_rss: 1
+show_comments: 1
+show_menu: 1
+fixed_sidebar: 1
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      comments: "true"
+
+# Serving
+url: ""
+baseurl: ""
+
+# Includes
+include: ["_pages"]
+
+# Outputting
+permalink: /:categories/:title.html
+category_dir: categories
+
+# Pagination
+paginate: 10
+paginate_path: "/page:num/"
+
+# Conversion
+markdown: kramdown
+highlighter: pygments
+
+# Assets Settings
+sass:
+  sass_dir: assets/partials
+  style: compressed
+
+gems:
+  - jemoji
