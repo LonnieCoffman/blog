@@ -45,12 +45,11 @@ using GitHub Pages for site updates.
  ~ $ gem install jekyll bundler
 {% endhighlight %}
 
-##### 2. Create a new Jekyll installation
-Instruct Jekyll to create a new installation using the following command. In this example
-we are going to create the installation in a folder named 'blog'. If this folder
-does not exist it will be created automatically.
+##### 2. Create a folder for your new site
+Since I am installing a blog I am going to create a folder named 'blog' to store
+all of the site files in.
 {% highlight console %}
- ~ $ jekyll new blog
+ ~ $ mkdir blog
 {% endhighlight %}
 
 ##### 3. Navigate to the folder you just created
@@ -58,42 +57,6 @@ Change to the 'blog' directory that you just created.
 {% highlight console %}
  ~ $ cd blog
 {% endhighlight %}
-
-##### 3a. (Optional) Remove warning message
-I use RVM and get the following message. It does not cause any issues and you are
-safe to ignore it.
-{% highlight console %}
- RVM used your Gemfile for selecting Ruby, it is all fine - Heroku does that too,
- you can ignore these warnings with 'rvm rvmrc warning ignore /Users/Lonnie/Development/blog/Gemfile'.
- To ignore the warning for all files run 'rvm rvmrc warning ignore allGemfiles'.
-
- Unknown ruby interpreter version (do not know how to handle): RUBY_VERSION.
-{% endhighlight %}
-
-If you would like to fix this read on, otherwise skip to step 4.
-
-To remove the RVM warning message input the line that was listed in the message.
-Based on the message I would enter the following:
-{% highlight console %}
- ~/blog $ rvm rvmrc warning ignore /Users/Lonnie/Development/blog/Gemfile
-{% endhighlight %}
-
-To remove the 'Unknown ruby interpreter version' message we first need to find
-the version number of Ruby that we are currently running.  An easy way to do this
-is by:
-{% highlight console %}
- ~/blog $ env | grep 'RUBY'
-{% endhighlight %}
-This gives me the following information from which I can see that I am using Ruby
-2.3.0.
-{% highlight console %}
- MY_RUBY_HOME=/Users/dad/.rvm/rubies/ruby-2.3.0
- RUBY_VERSION=ruby-2.3.0
-{% endhighlight %}
-As you can see the RUBY_VERSION environment variable is set to 'ruby-2.3.0' whereas
-Jekyll is expecting it to simply be '2.3.0'. So, to fix this we simply need to change
-the line in our Jekyll gemfile that reads <code>ruby RUBY_VERSION</code> to
-<code>ruby '2.3.0'</code>
 
 ##### 4. Get a template
 One of the great things about Jekyll is that there are many templates available
@@ -111,7 +74,11 @@ that I purchased from Theme Forest, the rest of this post will focus on how I
 installed it.
 
 ##### 5. Install your template
-WIP
+Copy all of the template files to the folder created in step 3. In my case this
+is the blog folder.  To install Jekyll and all dependencies run the following:
+{% highlight console %}
+ ~/blog $ bundle install
+{% endhighlight %}
 
 ##### 6. View and edit your new blog
 
