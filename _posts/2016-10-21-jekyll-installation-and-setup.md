@@ -75,15 +75,17 @@ installed it.
 
 ##### 5. Install your template
 Copy all of the template files to the folder created in step 3. In my case this
-is the blog folder.  To install Jekyll and all dependencies run the following:
+is the blog folder. The <code>_config.yml</code> file contains specific settings for
+your site, so it will need to be edited. Finally we need to setup Jekyll and all of
+it's dependencies by issuing the following command.
 {% highlight console %}
  ~/blog $ bundle install
 {% endhighlight %}
 
 ##### 6. View and edit your new blog
 
-You can view the site that Jekyll just
-created on a local server. Change to the blog directory that you just created and
+You can view the site that Jekyll just created on a local server. Change to the
+blog directory that you just created and
 enter the following.
 {% highlight console %}
  ~ $ bundle exec jekyll serve

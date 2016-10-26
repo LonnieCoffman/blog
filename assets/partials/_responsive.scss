@@ -11,7 +11,10 @@
 @include media-query($on-smaller-tablets) {
 	.the-content .post { padding: 20px 20px 120px;
 		.post-content {
-			.alignleft, .alignright { float: none; margin: 20px 0;
+			.alignleft { float: left; margin: 10px 10px 10px 0;
+				img { width: 100%; }
+			}
+			.alignright { float: none; margin: 10px 0;
 				img { width: 100%; }
 			}
 		}

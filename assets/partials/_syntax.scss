@@ -1,9 +1,10 @@
 .highlight { background: #282C34;
 						 border-radius: 10px;
 						 border: 3px solid #ccc;
-						 padding: 15px 0 15px 2px;
+						 padding: 15px 10px 15px 2px;
+						 color: #eee;
 						 font-size: 15px;
-						 text-shadow: 0 1px rgba(0,0,0,0.3);
+						 text-shadow: 0 1px rgba(0,0,0,0.2);
 						 -webkit-font-smoothing: antialiased !important;
 						 -moz-osx-font-smoothing: grayscale;
 
@@ -51,7 +52,7 @@
  	  width: 22px;
  	  text-align: right;
  	  display: inline-block;
- 	  color: #666;
+ 	  color: #999;
 		background: #282C34;
  	  margin-right: 16px;
 		border-right: 1px solid #666;
@@ -62,10 +63,6 @@
  	  -ms-user-select: none;
  	  user-select: none;
  	}
-
-	pre a:only-of-type::before {
-  	padding: 10px;
-	}
 
 	.lineno { padding: 0 11px 0 0; color: #4B5363;  border-right: 1px solid #4B5363; }
 	.highlighter-rouge & { background: #eef; }
@@ -84,7 +81,7 @@
 	.gh    { color: #999 } // Generic.Heading
 	.gi    { color: #000; background-color: #dfd } // Generic.Inserted
 	.gi .x { color: #000; background-color: #afa } // Generic.Inserted.Specific
-	.go    { color: #888 } // Generic.Output
+	.go    { color: #ccc } // Generic.Output
 	.gp    { color: #555 } // Generic.Prompt
 	.gs    { font-weight: bold } // Generic.Strong
 	.gu    { color: #aaa } // Generic.Subheading
@@ -125,7 +122,7 @@
 	.sx    { color: #d14 } // Literal.String.Other
 	.sr    { color: #009926 } // Literal.String.Regex
 	.s1    { color: #98C379; } // Literal.String.Single
-	.ss    { color: #990073 } // Literal.String.Symbol
+	.ss    { color: #DF20B0 } // Literal.String.Symbol
 	.bp    { color: #999 } // Name.Builtin.Pseudo
 	.vc    { color: #008080 } // Name.Variable.Class
 	.vg    { color: #008080 } // Name.Variable.Global

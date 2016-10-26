@@ -20,7 +20,7 @@ I started attending [Launch School](http://launchschool.com) a little over a mon
 
 **1. Buy a real Mac**
 
-Not something that I am considering at this point.  In my opinion macs are very nice to look at, but way overpriced compared to PCs when using the same or even lower end hardware.
+At this point in time a real mac is a bit out of my budget, so not an option.
 
 **2. Run Mac OS in a virtual machine**
 
