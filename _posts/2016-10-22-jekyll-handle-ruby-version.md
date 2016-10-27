@@ -24,7 +24,7 @@ error.
 
 These are the error messages that I receive.
 
-{% highlight console %}
+{% highlight text %}
  RVM used your Gemfile for selecting Ruby, it is all fine - Heroku does that too,
  you can ignore these warnings with 'rvm rvmrc warning ignore /Users/lonnie/development/blog/Gemfile'.
  To ignore the warning for all files run 'rvm rvmrc warning ignore allGemfiles'.
@@ -36,8 +36,8 @@ These are the error messages that I receive.
 The RVM warning message above displays the instructions for removing the warning.
 In my case all that I needed to do was enter the following in a terminal.
 
-{% highlight console %}
- ~/blog $ rvm rvmrc warning ignore /Users/lonnie/development/blog/Gemfile
+{% highlight sh %}
+rvm rvmrc warning ignore /Users/lonnie/development/blog/Gemfile
 {% endhighlight %}
 
 ### Fix unknown ruby interpreter version
@@ -46,14 +46,14 @@ To remove the 'Unknown ruby interpreter version' message we first need to find
 the version number of Ruby that is currently running.  An easy way to do this
 is by:
 
-{% highlight console %}
- ~/blog $ env | grep 'RUBY'
+{% highlight sh %}
+env | grep 'RUBY'
 {% endhighlight %}
 
 This gives me the following information from which I can see that I am using Ruby
 2.3.0.
 
-{% highlight console %}
+{% highlight text %}
  MY_RUBY_HOME=/Users/dad/.rvm/rubies/ruby-2.3.0
  RUBY_VERSION=ruby-2.3.0
 {% endhighlight %}

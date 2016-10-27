@@ -1,56 +1,71 @@
 .highlight { background: #282C34;
 						 border-radius: 10px;
 						 border: 3px solid #ccc;
-						 padding: 15px 10px 15px 10px;
-						 color: #abb2bf;
+						 padding: 15px 10px 15px 2px;
+						 color: #eee;
 						 font-size: 15px;
-						 font-weight: bold;
 						 text-shadow: 0 1px rgba(0,0,0,0.2);
 						 -webkit-font-smoothing: antialiased !important;
 						 -moz-osx-font-smoothing: grayscale;
 
-	 ::-webkit-scrollbar {
- 		width: 14px;
- 		height: 24px;
- 	}
- 	::-webkit-scrollbar-thumb {
- 		margin: 0 10px;
- 		border: 8px solid rgba(0, 0, 0, 0);
- 		background-clip: padding-box;
- 		-webkit-border-radius: 18px;
- 		background-color: #484848;
- 		-webkit-box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05), inset 1px 1px 0px rgba(0, 0, 0, 0.05);
- 	}
- 	::-webkit-scrollbar-track {
-     margin: 0 36px;
- }
- 	::-webkit-scrollbar-button {
- 		width: 0;
- 		height: 0;
- 		display: none;
- 	}
- 	::-webkit-scrollbar-corner {
- 		background-color: transparent;
- 	}
-	pre {
-	 counter-reset: line-numbering;
-	 padding: 0;
-	 white-space: pre;
-	 overflow-x: auto;
-	 word-break: inherit;
-	 word-wrap: inherit;
+	::-webkit-scrollbar {
+		width: 14px;
+		height: 24px;
 	}
-	.lineno { padding: 0 11px 0 0;
-						margin: 0 10px 0 0;
-					  color: #486370;
-						border-right: 1px solid #486370;
-						-webkit-user-select: none;
-						-khtml-user-select: none;
-						-moz-user-select: none;
-						-ms-user-select: none;
-						user-select: none; }
+	::-webkit-scrollbar-thumb {
+		margin: 0 10px;
+		border: 8px solid rgba(0, 0, 0, 0);
+		background-clip: padding-box;
+		-webkit-border-radius: 18px;
+		background-color: #484848;
+		-webkit-box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05), inset 1px 1px 0px rgba(0, 0, 0, 0.05);
+	}
+	::-webkit-scrollbar-track {
+    margin: 0 36px;
+}
+	::-webkit-scrollbar-button {
+		width: 0;
+		height: 0;
+		display: none;
+	}
+	::-webkit-scrollbar-corner {
+		background-color: transparent;
+	}
+
+	a {
+		border: 0;
+	}
+
+	pre {
+   counter-reset: line-numbering;
+   padding: 0;
+   white-space: pre;
+   overflow-x: auto;
+   word-break: inherit;
+   word-wrap: inherit;
+ 	}
+
+ 	pre a::before {
+ 	  content: counter(line-numbering);
+ 	  counter-increment: line-numbering;
+ 	  padding-right: 5px; /* space after numbers */
+ 	  width: 22px;
+ 	  text-align: right;
+ 	  display: inline-block;
+ 	  color: #999;
+		background: #282C34;
+ 	  margin-right: 16px;
+		border-right: 1px solid #666;
+ 	  -webkit-touch-callout: none;
+ 	  -webkit-user-select: none;
+ 	  -khtml-user-select: none;
+ 	  -moz-user-select: none;
+ 	  -ms-user-select: none;
+ 	  user-select: none;
+ 	}
+
+	.lineno { padding: 0 11px 0 0; color: #4B5363;  border-right: 1px solid #4B5363; }
 	.highlighter-rouge & { background: #eef; }
-	// Default colors
 	.c     { color: #667689; font-style: italic } // Comment
 	.err   { color: #a61717; background-color: #e3d2d2 } // Error
 	.k     { font-weight: bold } // Keyword
@@ -114,46 +129,4 @@
 	.vi    { color: #008080 } // Name.Variable.Instance
 	.il    { color: #099 } // Literal.Number.Integer.Long
 
-	// css specific color overrides
-	.language-css {
-		// orange 2 = #e5c07b red 2 = #be5046
-		.k, .cp 	{ color: #c678dd } // purple
-		.s1     	{ color: #98c379 } // green
-		.nc, .m		{ color: #d19a66 } // orange 1
-		.err, .n, .no,
-		.o, .nd 	{ color: #e06c75 } // red 1
-		.sx, .nb	{ color: #56b6c2 } // cyan
-		.err 			{ background-color: #282C34 }
-	}
-
-	.language-yaml {
-		.s, .s1, .s2	{ color: #e06c75 } // red 1
-		.pi, .nv	{ color: #98c379 } // green
-	}
-
-	.language-ruby {
-		.nb, .ss { color: #56b6c2 } // cyan
-		.k  { color: #c678dd } // purple
-		.vi, .si { color: #e06c75 } // red 1
-		.no, .mi { color: #d19a66 } // orange 1
-		.o, .p, .sx, .sh, .se, .sr  { color: #98c379 } // green
-		.nf { color: #61afef } // blue
-		.n { color: #abb2bf }
-	}
-
-	// using for MQL since there is not a lexer for it
-	.language-scala {
-		.nc { color: #d19a66 } // orange 1
-		.mi, .mf { color: #56b6c2 } // cyan
-		.kt { color: #e06c75 } // red 1
-	}
-
-  .language-sh {
-    color: #abb2bf;
-  }
-
-  .language-sh::before {
-    content: ' $ ';
-    color: #e06c75;
-  }
 }

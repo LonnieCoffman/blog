@@ -41,21 +41,21 @@ As a note, I am installing on Mac OS and already have Ruby installed and am not
 using GitHub Pages for site updates.
 
 ##### 1. Install the Jekyll and Bundler gems.
-{% highlight console %}
- ~ $ gem install jekyll bundler
+{% highlight sh %}
+gem install jekyll bundler
 {% endhighlight %}
 
 ##### 2. Create a folder for your new site
 Since I am installing a blog I am going to create a folder named 'blog' to store
 all of the site files in.
-{% highlight console %}
- ~ $ mkdir blog
+{% highlight sh %}
+mkdir blog
 {% endhighlight %}
 
 ##### 3. Navigate to the folder you just created
 Change to the 'blog' directory that you just created.
-{% highlight console %}
- ~ $ cd blog
+{% highlight sh %}
+cd blog
 {% endhighlight %}
 
 ##### 4. Get a template
@@ -78,8 +78,8 @@ Copy all of the template files to the folder created in step 3. In my case this
 is the blog folder. The <code>_config.yml</code> file contains specific settings for
 your site, so it will need to be edited. Finally we need to setup Jekyll and all of
 it's dependencies by issuing the following command.
-{% highlight console %}
- ~/blog $ bundle install
+{% highlight sh %}
+bundle install
 {% endhighlight %}
 
 ##### 6. View and edit your new blog
@@ -87,6 +87,6 @@ it's dependencies by issuing the following command.
 You can view the site that Jekyll just created on a local server. Change to the
 blog directory that you just created and
 enter the following.
-{% highlight console %}
- ~ $ bundle exec jekyll serve
+{% highlight sh %}
+bundle exec jekyll serve
 {% endhighlight %}
