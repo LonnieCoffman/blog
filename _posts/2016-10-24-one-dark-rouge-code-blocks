@@ -13,7 +13,7 @@ tags:
 - rouge
 ---
 <figure class="alignleft">
-	<img src="{{ site.url }}/assets/rouge.png" width="120"/>
+	<img src="{{ site.url }}/{{ site.baseurl }}/assets/rouge.png" width="120"/>
 </figure>
 I know that Rouge is the recommended highlighter for Jekyll, but there currently
 is not a lexar for MQL.  Until I get to writing one I am currently using Pygments

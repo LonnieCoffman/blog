@@ -12,7 +12,7 @@ tags:
 - jekyll blog
 ---
 <figure class="alignleft">
-	<img src="{{ site.url }}/assets/terminal_warning.jpg" />
+	<img src="{{ site.url }}/{{ site.baseurl }}/assets/terminal_warning.jpg" />
 </figure>
 When setting up a new Jekyll site while using RVM I get a warning message about
 RVM using my Gemfile for selecting Ruby.  In addition another warning is displayed

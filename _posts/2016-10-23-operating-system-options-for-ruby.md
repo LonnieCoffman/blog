@@ -5,14 +5,14 @@ title: "Computer System Options for Ruby Web Development"
 description: My options for computer systems while learning web development, my opinions on each and what I ultimately chose.
 comments: true
 category:
-- Development Environment
+- Development-Environment
 tags:
 - ruby
 - hackintosh
 - development environment
 ---
 <figure class="alignleft">
-	<img src="{{ site.url }}/assets/vintagemacintosh.jpg" />
+	<img src="{{ site.url }}/{{ site.baseurl }}/assets/vintagemacintosh.jpg" />
 </figure>
 I started attending [Launch School](http://launchschool.com) a little over a month ago and since I am a long time Windows user I quickly discovered that setting up a development environment for programming in Ruby was not an easy thing to do.  After doing a bit of research I found that I really only had a couple of options.
 

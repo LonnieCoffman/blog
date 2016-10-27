@@ -5,8 +5,8 @@ email: lonniecoffman@icloud.com
 description: In the process of career swapping to web development via <a href='http://www.launchschool.com' class='link'>Launch School</a>, a lot of hard work and a little bit of luck.
 avatar: https://avatars1.githubusercontent.com/u/22034947
 favicon: /favicon.ico
-twitter_handler: your_handler
-analytics_code: UA-XXXXXXX-2
+twitter_handler:
+analytics_code:
 disqus: lonniecoffman
 
 # Social Accounts
@@ -54,8 +54,8 @@ defaults:
       comments: "true"
 
 # Serving
-url: ""
-baseurl: ""
+url: "https://lonniecoffman.github.io"
+baseurl: "/blog"
 
 # Includes
 include: ["_pages"]
@@ -64,12 +64,12 @@ include: ["_pages"]
 exclude: ["psd"]
 
 # Outputting
-permalink: /:categories/:title.html
+permalink: :categories/:title.html
 category_dir: categories
 
 # Pagination
 paginate: 10
-paginate_path: "/page:num/"
+paginate_path: "page:num/"
 
 # Conversion
 markdown: kramdown

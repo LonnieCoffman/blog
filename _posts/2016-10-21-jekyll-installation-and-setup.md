@@ -13,7 +13,7 @@ tags:
 ---
 
 <figure class="alignleft">
-	<img src="{{ site.url }}/assets/sm_jekyll.png" />
+	<img src="{{ site.url }}/{{ site.baseurl }}/assets/sm_jekyll.png" />
 </figure>
 My ongoing adventure in setting up and customizing a <a href="http://jekyllrb.com" title="Title">Jekyll</a> blog.  In this First
 post I go over a little about Jekyll, why I chose it instead of Wordpress or other
