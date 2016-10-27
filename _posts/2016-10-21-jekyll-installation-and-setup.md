@@ -4,8 +4,9 @@ date: 2016-10-21 16:25
 title: "My Jekyll Blog 1: Local Installation and Initial Setup"
 description: How I set up a local Jekyll install to develop my blog offline while learning about Jekyll and how to configure it
 comments: true
+mood: speechless
 category:
-- How-To
+- how-to
 tags:
 - pygments
 - jekyll
@@ -13,7 +14,7 @@ tags:
 ---
 
 <figure class="alignleft">
-	<img src="{{ site.url }}/{{ site.baseurl }}/assets/sm_jekyll.png" />
+	<img src="{{ site.image }}sm_jekyll.png" />
 </figure>
 My ongoing adventure in setting up and customizing a <a href="http://jekyllrb.com" title="Title">Jekyll</a> blog.  In this First
 post I go over a little about Jekyll, why I chose it instead of Wordpress or other

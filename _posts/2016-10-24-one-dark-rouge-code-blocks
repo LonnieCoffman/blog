@@ -5,7 +5,7 @@ title: "My Jekyll Blog 2: Theming and Styling my Code Blocks"
 description: Formatting my code blocks with the Atom One Dark theme and making line number non-selectable.
 comments: true
 category:
-- How-To
+- how-to
 tags:
 - ruby
 - jekyll
@@ -13,7 +13,7 @@ tags:
 - rouge
 ---
 <figure class="alignleft">
-	<img src="{{ site.url }}/{{ site.baseurl }}/assets/rouge.png" width="120"/>
+	<img src="{{ site.image }}rouge.png" width="120"/>
 </figure>
 I know that Rouge is the recommended highlighter for Jekyll, but there currently
 is not a lexar for MQL.  Until I get to writing one I am currently using Pygments

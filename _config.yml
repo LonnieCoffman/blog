@@ -35,9 +35,9 @@ social_networks:
 -  { name: xing, url: '' }
 
 # Modules Settings
-show_categories: 1
-show_tags: 1
-show_mood: 1
+show_categories: 0
+show_tags: 0
+show_mood: 0
 show_email: 1
 show_rss: 1
 show_comments: 1
@@ -79,6 +79,8 @@ highlighter: rouge
 sass:
   sass_dir: assets/partials
   style: compressed
+
+image: '/blog/assets/img/'
 
 gems:
   - jemoji

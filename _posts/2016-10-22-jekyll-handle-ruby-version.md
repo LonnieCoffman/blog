@@ -5,14 +5,14 @@ title: "Fix Unknown Ruby Interpreter Version in Jekyll"
 description: How to fix Unknown ruby interpreter version (do not know how to handle) RUBY_VERSION and RVM warning.
 comments: true
 category:
-- How-To
+- how-to
 tags:
 - rvm
 - jekyll
 - jekyll blog
 ---
 <figure class="alignleft">
-	<img src="{{ site.url }}/{{ site.baseurl }}/assets/terminal_warning.jpg" />
+	<img src="{{ site.image }}terminal_warning.jpg" />
 </figure>
 When setting up a new Jekyll site while using RVM I get a warning message about
 RVM using my Gemfile for selecting Ruby.  In addition another warning is displayed
