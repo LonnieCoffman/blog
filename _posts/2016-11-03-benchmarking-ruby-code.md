@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2016-10-24 14:05
+date: 2016-11-03 14:05
 title: "Benchmarking Ruby Code Using Benchmark and Benchmark-ips"
 description: How to benchmark Ruby code using the benchmark module and the benchmark-ips Ruby gem.
 comments: true
