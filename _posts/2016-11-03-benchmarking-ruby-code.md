@@ -20,7 +20,8 @@ execution should also be a factor. The Benchmark module and the benchmark-ips
 gem can provide performance data of code execution times.
 
 ### Ruby's Benchmark Module
-The benchmark module from the Ruby Standard Library measures the time that it
+The [benchmark module](https://ruby-doc.org/stdlib-2.3.1/libdoc/benchmark/rdoc/Benchmark.html)
+from the Ruby Standard Library measures the time that it
 takes to execute a specific section of code.  it generates data in seconds in
 the following format:
 {% highlight text %}
@@ -33,7 +34,7 @@ user       system     total     real
 * <code>real = Real Time</code> - the actual time that execution took
 
 ### Testing with The Benchmark Module
-I have been working through the 101-109 Small Problems section of Launch School
+I have been working through the 101-109 Small Problems section of [Launch School](https://launchschool.com)
 in preparation for my first assessment and recently wrote a solution to the
 'Sum of Digits' problem. This problem involved taking a positive integer and
 returning a sum of its digits. When I wrote my solution I did not think of using
@@ -91,7 +92,7 @@ Benchmark.bmbm do |test|
   end
 end
 {% endhighlight %}
-In the code above we used the Benchmark#bmbm method in order to avoid any garbage
+In the code above we used the [Benchmark#bmbm](https://ruby-doc.org/stdlib-2.3.1/libdoc/benchmark/rdoc/Benchmark.html#method-c-bmbm) method in order to avoid any garbage
 collection overhead and get the runtime environment stable.  This is done by running
 two passes, the first being a rehearsal. Each block is run one million times in order
 to get enough iterations to compare data.  Executing the code above we get the following:
@@ -117,7 +118,7 @@ no built in way of comparing the data.
 
 In using the Benchmark module I had to choose an iteration value that would provide
 enough information for comparison and then visually compare the results.  Using
-the benchmark-ips gem we can garner more information and do not have to guess
+the [benchmark-ips gem](https://github.com/evanphx/benchmark-ips) we can garner more information and do not have to guess
 the number of iterations that would provide relevancy. This gem measures iterations
 per second and then provides a comparison of the results.  Here is the same test
 using benchmark-ips.
